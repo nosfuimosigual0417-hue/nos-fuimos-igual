@@ -80,8 +80,8 @@
 .calendar-trip-photo{background:center/cover;min-height:100%}
 .asturias-calendar{background-image:url('fotos/asturias.webp')}
 .morocco-calendar{background-image:url('fotos/Marruecos.jpg')}
-.asia-calendar{background-image:linear-gradient(135deg,#17334a99,#c87a4c55),url('fotos/Marruecos.jpg')}
-.aurora-calendar{background-image:linear-gradient(135deg,#102c3d88,#d48a6155),url('fotos/Marruecos.jpg')}
+ .asia-calendar{background-image:linear-gradient(135deg,#17334a,#7a6b92,#d48a61)}
+ .aurora-calendar{background-image:linear-gradient(135deg,#102c3d,#355c66,#8d7390)}
 .calendar-trip-body{padding:25px;display:flex;flex-direction:column}
 .calendar-label{font-size:10px;font-weight:800;letter-spacing:.14em;color:var(--terr)}
 .calendar-trip h3{font-family:Georgia,serif;font-size:34px;line-height:1;margin:8px 0}
