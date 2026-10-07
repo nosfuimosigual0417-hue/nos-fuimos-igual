@@ -63,3 +63,34 @@
 .info{background:#fff;padding:18px;border-left:4px solid var(--terr);display:flex;flex-direction:column;gap:6px}
 .info b{font-size:10px;letter-spacing:.15em;color:var(--terr)}
 @media(max-width:560px){.info-grid{grid-template-columns:1fr}}
+
+/* Calendario dinámico */
+.calendar-hero{background:linear-gradient(135deg,#ead7c8,#fbf7f1)}
+.calendar-section{padding:90px 0 110px;background:var(--cream)}
+.calendar-intro{max-width:800px;margin-bottom:65px}
+.calendar-intro h2{font-family:Georgia,serif;font-size:clamp(48px,6vw,78px);line-height:.9;letter-spacing:-.05em;margin:10px 0 18px}
+.calendar-intro h2 em,.calendar-flex h3 em{color:var(--terr);font-style:normal}
+.month-block{margin:0 0 72px}
+.month-title{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:22px}
+.month-title span{font-family:Georgia,serif;font-size:clamp(35px,5vw,58px);line-height:1}
+.month-title strong{font-size:15px;letter-spacing:.16em;color:var(--terr)}
+.calendar-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.calendar-trip{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:grid;grid-template-columns:180px 1fr;min-height:280px;box-shadow:0 14px 35px #3c2b1b12}
+.calendar-trip.upcoming{grid-template-columns:280px 1fr}
+.calendar-trip-photo{background:center/cover;min-height:100%}
+.asturias-calendar{background-image:url('fotos/asturias.webp')}
+.morocco-calendar{background-image:url('fotos/Marruecos.jpg')}
+.asia-calendar{background-image:linear-gradient(135deg,#17334a99,#c87a4c55),url('fotos/Marruecos.jpg')}
+.aurora-calendar{background-image:linear-gradient(135deg,#102c3d88,#d48a6155),url('fotos/Marruecos.jpg')}
+.calendar-trip-body{padding:25px;display:flex;flex-direction:column}
+.calendar-label{font-size:10px;font-weight:800;letter-spacing:.14em;color:var(--terr)}
+.calendar-trip h3{font-family:Georgia,serif;font-size:34px;line-height:1;margin:8px 0}
+.calendar-sub{font-weight:800;margin:0 0 12px}
+.calendar-trip-body>p:not(.calendar-sub){color:var(--muted);line-height:1.55;margin:0 0 18px}
+.calendar-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto}
+.calendar-bottom strong{font-size:14px}
+.calendar-flex{display:flex;align-items:center;justify-content:space-between;gap:30px;background:var(--ink);color:#fff;padding:32px;border-radius:12px}
+.calendar-flex h3{font-family:Georgia,serif;font-size:36px;margin:7px 0}
+.calendar-flex p{color:#d9d5cf;max-width:700px;line-height:1.55;margin:0}
+@media(max-width:850px){.calendar-cards{grid-template-columns:1fr}.calendar-trip,.calendar-trip.upcoming{grid-template-columns:1fr}.calendar-trip-photo{min-height:220px}.calendar-flex{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){.calendar-section{padding:65px 0 80px}.month-block{margin-bottom:55px}.calendar-bottom{align-items:flex-start;flex-direction:column}.calendar-flex{padding:25px}}
