@@ -24,3 +24,37 @@
 .whitebtn{display:inline-flex;align-items:center;justify-content:center;background:#fff;color:var(--ink);padding:15px 22px;border-radius:5px;font-weight:800;font-size:13px;letter-spacing:.03em;box-shadow:0 8px 20px #0003;transition:transform .2s,background .2s}
 .whitebtn:hover{transform:translateY(-2px);background:#f7efe7}
 @media(max-width:760px){.cards{grid-template-columns:1fr}.trip{min-height:540px}.catalog-section{padding:65px 0 80px}}
+
+
+/* Itinerarios y fichas completas */
+.itinerary{padding:95px 0;background:var(--paper)}
+.itinerary-head{max-width:760px;margin-bottom:48px}
+.itinerary-head h2{font-family:Georgia,serif;font-size:clamp(48px,6vw,78px);line-height:.9;letter-spacing:-.05em;margin:10px 0 18px}
+.itinerary-head h2 em{color:var(--terr);font-style:normal}
+.day-card{display:grid;grid-template-columns:260px 1fr;gap:34px;align-items:stretch;padding:28px 0;border-top:1px solid var(--line)}
+.day-card:last-child{border-bottom:1px solid var(--line)}
+.day-photo{min-height:230px;border-radius:10px;background:center/cover}
+.day-number{color:var(--terr);font-weight:800;font-size:11px;letter-spacing:.18em;margin-bottom:8px}
+.day-card h3{font-family:Georgia,serif;font-size:38px;line-height:1;margin:0 0 14px}
+.day-card p{color:var(--muted);font-size:16px;line-height:1.65;margin:0 0 12px}
+.day-card ul{margin:10px 0 0;padding-left:20px;color:var(--muted);line-height:1.65}
+.include-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:35px}
+.include-box{padding:30px;background:var(--cream);border:1px solid var(--line);border-radius:8px}
+.include-box h3{font-family:Georgia,serif;font-size:34px;margin:0 0 18px}
+.include-box ul{margin:0;padding-left:20px;line-height:1.8;color:var(--muted)}
+.trip-price-banner{margin:45px 0;padding:32px 36px;background:var(--terr);color:#fff;border-radius:10px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.trip-price-banner small{display:block;letter-spacing:.15em;font-weight:800;font-size:11px}
+.trip-price-banner strong{font-family:Georgia,serif;font-size:52px;line-height:1}
+.trip-price-banner span{font-size:14px;opacity:.92}
+.gallery-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.gallery-strip img{width:100%;height:250px;object-fit:cover;border-radius:10px}
+.final-cta{background:var(--ink);color:#fff;padding:90px 0;text-align:center}
+.final-cta h2{font-family:Georgia,serif;font-size:clamp(55px,8vw,100px);line-height:.85;margin:12px 0 28px}
+.final-cta h2 em{color:var(--terr2);font-style:normal}
+@media(max-width:760px){
+  .day-card{grid-template-columns:1fr}
+  .day-photo{min-height:260px}
+  .include-grid,.gallery-strip{grid-template-columns:1fr}
+  .trip-price-banner{align-items:flex-start;flex-direction:column}
+  .trip-price-banner strong{font-size:44px}
+}
