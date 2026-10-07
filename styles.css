@@ -7,3 +7,20 @@
 .mentor-topics{display:flex;flex-direction:column;gap:8px;font-size:.92rem;color:var(--muted)}
 .small-note{font-size:.78rem;color:var(--muted);margin-top:12px}
 @media(max-width:760px){.mentor-box{align-items:flex-start;flex-direction:column;gap:16px}.mentor-price{font-size:2.5rem}}
+
+
+/* Catálogo de viajes */
+.catalog-section{padding:85px 0 110px;background:var(--cream)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.trip{min-height:620px;border-radius:12px;overflow:hidden;position:relative;color:#fff;padding:30px;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 22px 55px #3c2b1b1c;background-size:cover;background-position:center}
+.trip.morocco{background-image:linear-gradient(180deg,#0000 30%,#17100edd 100%),url('fotos/Marruecos.jpg')}
+.trip.asturias{background-image:linear-gradient(180deg,#0000 30%,#142016dd 100%),url('fotos/puerta.jpg')}
+.trip .tag{position:absolute;top:24px;left:24px;background:#fff;color:var(--ink);padding:9px 14px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:.05em}
+.trip .country{font-size:12px;font-weight:800;letter-spacing:.16em;margin-bottom:12px}
+.trip h3{font-family:Georgia,serif;font-size:clamp(45px,5vw,68px);line-height:.88;letter-spacing:-.04em;margin:0 0 14px}
+.trip p{margin:0 0 22px;font-size:15px}
+.trip-bottom{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.trip-bottom strong{font-size:18px}
+.whitebtn{display:inline-flex;align-items:center;justify-content:center;background:#fff;color:var(--ink);padding:15px 22px;border-radius:5px;font-weight:800;font-size:13px;letter-spacing:.03em;box-shadow:0 8px 20px #0003;transition:transform .2s,background .2s}
+.whitebtn:hover{transform:translateY(-2px);background:#f7efe7}
+@media(max-width:760px){.cards{grid-template-columns:1fr}.trip{min-height:540px}.catalog-section{padding:65px 0 80px}}
