@@ -233,3 +233,60 @@
  .beliefs{grid-template-columns:1fr;gap:0}
  .belief{font-size:clamp(25px,6vw,32px);padding:20px 0}
 }
+
+
+/* Nosotras: texto cercano, compacto y alineado con la identidad visual */
+.about-layout{
+  grid-template-areas:"copy main" "secondary small";
+  align-items:stretch;
+  gap:18px;
+}
+.about-layout .about-copy{
+  min-height:0;
+  align-self:center;
+  justify-content:center;
+  gap:12px;
+  padding:0 10px 0 0;
+}
+.about-layout .about-copy .lead{
+  font-family:'DM Sans',sans-serif;
+  font-size:clamp(15.5px,1.22vw,17px);
+  line-height:1.58;
+  text-align:left;
+  letter-spacing:0;
+  margin:0;
+  color:#514b44;
+}
+.about-layout .about-copy .lead strong{
+  color:var(--terr);
+  font-weight:800;
+}
+.about-layout .secondary-column{
+  grid-area:secondary;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  min-width:0;
+}
+.about-layout .secondary-column .team-caption{
+  margin:0;
+  padding:0 2px;
+  color:#76513e;
+  font-family:'DM Sans',sans-serif;
+  font-size:13px;
+  line-height:1.5;
+  text-align:left;
+}
+.about-layout .secondary-column .team-caption strong{font-weight:800}
+.about-layout .team-secondary{
+  flex:1;
+  min-height:250px;
+}
+@media(max-width:760px){
+  .about-layout{grid-template-areas:"copy" "main" "secondary" "small";gap:14px}
+  .about-layout .about-copy{gap:12px;padding:0}
+  .about-layout .about-copy .lead{font-size:16px;line-height:1.6}
+  .about-layout .secondary-column{gap:10px}
+  .about-layout .secondary-column .team-caption{font-size:13px}
+  .about-layout .team-secondary{min-height:280px}
+}
