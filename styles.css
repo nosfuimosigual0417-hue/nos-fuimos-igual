@@ -252,7 +252,8 @@
   font-family:'DM Sans',sans-serif;
   font-size:clamp(15.5px,1.22vw,17px);
   line-height:1.58;
-  text-align:left;
+  text-align:justify;
+  text-justify:inter-word;
   letter-spacing:0;
   margin:0;
   color:#514b44;
