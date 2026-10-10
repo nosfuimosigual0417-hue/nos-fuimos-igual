@@ -400,3 +400,72 @@
   .mentor-help-card h4{font-size:23px}
   .mentor-photo-strip img{height:118px}
 }
+
+
+/* CTA destacado para descubrir las próximas aventuras */
+.section-head .calendar-cta{
+  position:relative;
+  isolation:isolate;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  gap:5px;
+  flex:0 0 auto;
+  min-width:270px;
+  padding:17px 23px 18px;
+  border:1px solid #a95734;
+  border-radius:9px;
+  background:linear-gradient(135deg,#c77a51 0%,#a95332 100%);
+  color:#fff;
+  box-shadow:0 9px 0 #8d472e,0 15px 28px #8d472e35;
+  text-align:left;
+  transform:translateY(-3px);
+  transition:transform .2s ease,box-shadow .2s ease,filter .2s ease;
+  overflow:hidden;
+}
+.section-head .calendar-cta::after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  top:-35%;
+  bottom:-35%;
+  left:-55%;
+  width:32%;
+  transform:rotate(22deg);
+  background:#ffffff30;
+  transition:left .45s ease;
+}
+.section-head .calendar-cta:hover{
+  color:#fff;
+  transform:translateY(-6px);
+  box-shadow:0 12px 0 #8d472e,0 20px 34px #8d472e40;
+  filter:saturate(1.08);
+}
+.section-head .calendar-cta:hover::after{left:125%}
+.calendar-cta-kicker{
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.19em;
+  color:#ffe5d4;
+}
+.calendar-cta-main{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:13px;
+  line-height:1.35;
+  font-weight:800;
+  letter-spacing:.035em;
+}
+.calendar-cta-main span{
+  font-size:23px;
+  line-height:1;
+  transition:transform .2s ease;
+}
+.section-head .calendar-cta:hover .calendar-cta-main span{transform:translate(3px,-2px)}
+@media(max-width:560px){
+  .section-head{align-items:flex-start;flex-direction:column;gap:22px}
+  .section-head .calendar-cta{width:100%;min-width:0;align-items:center;text-align:center}
+  .calendar-cta-main{justify-content:center;flex-wrap:wrap;font-size:12px}
+}
