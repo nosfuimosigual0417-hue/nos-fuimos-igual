@@ -161,3 +161,75 @@
  .about-layout .team-small-row{gap:10px}
  .about-layout .team-small-row>div{min-height:135px}
 }
+
+
+/* Pulido editorial de la sección Nosotras */
+.about-layout .about-copy{
+  align-self:stretch;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:18px;
+  padding:10px 12px 10px 0;
+  min-height:510px;
+}
+.about-layout .about-copy .lead{
+  font-size:clamp(18px,1.55vw,21px);
+  line-height:1.65;
+  text-align:justify;
+  text-justify:inter-word;
+  letter-spacing:.005em;
+  margin:0;
+  max-width:none;
+}
+.about-layout .about-copy .lead b{
+  color:var(--terr);
+  font-weight:800;
+}
+.about-layout .about-copy .team-caption{
+  margin:0;
+  padding-top:15px;
+  border-top:1px solid var(--line);
+  color:#74665b;
+  font-size:clamp(15px,1.15vw,17px);
+  line-height:1.65;
+  text-align:justify;
+}
+.dark{
+  background:#f0e3d7;
+  color:var(--ink);
+  padding:78px 0 84px;
+  border-top:1px solid #e4d2c2;
+}
+.section-kicker{
+  color:var(--terr);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.24em;
+  margin-bottom:24px;
+}
+.beliefs{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:0 36px;
+  border-top:1px solid #d7bca8;
+}
+.belief{
+  position:relative;
+  padding:24px 8px 24px 0;
+  border-bottom:1px solid #d7bca8;
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:clamp(24px,3vw,38px);
+  line-height:1.18;
+  letter-spacing:-.025em;
+  color:#75462f;
+}
+.belief:nth-child(even){font-style:italic;color:#9b5d40}
+@media(max-width:760px){
+ .about-layout .about-copy{min-height:0;gap:17px;padding:0}
+ .about-layout .about-copy .lead{font-size:18px;line-height:1.65}
+ .about-layout .about-copy .team-caption{font-size:15px}
+ .dark{padding:58px 0 62px}
+ .beliefs{grid-template-columns:1fr;gap:0}
+ .belief{font-size:clamp(25px,6vw,32px);padding:20px 0}
+}
