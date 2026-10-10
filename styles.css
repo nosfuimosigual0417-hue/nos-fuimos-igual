@@ -121,12 +121,13 @@
 @media(max-width:560px){.calendar-destination{min-height:450px}.calendar-destination h3{font-size:48px}.calendar-destination .calendar-destination-body{left:22px;right:22px;bottom:22px}}
 
 /* Nosotras: fotos reales de Joha y Steff */
-.team-gallery{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;margin-top:35px}
-.team-gallery .team-main{min-height:560px;background:center/cover;border-radius:12px}
-.team-gallery .team-side{display:grid;grid-template-rows:1fr 1fr;gap:18px}
-.team-gallery .team-side div{min-height:270px;background:center/cover;border-radius:12px}
+.team-gallery{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;margin-top:35px;align-items:stretch}
+.team-gallery .team-main{min-height:620px;background-position:center;background-size:cover;background-repeat:no-repeat;border-radius:12px}
+.team-gallery .team-side{display:grid;grid-template-rows:minmax(300px,1.25fr) minmax(190px,.75fr);gap:18px;min-width:0}
+.team-gallery .team-side .team-secondary,.team-gallery .team-small-row>div{min-height:0;background-position:center;background-size:cover;background-repeat:no-repeat;border-radius:12px}
+.team-gallery .team-small-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;min-height:190px}
 .team-caption{margin-top:16px;color:var(--muted);font-size:14px}
-@media(max-width:760px){.team-gallery{grid-template-columns:1fr}.team-gallery .team-side{grid-template-columns:1fr 1fr;grid-template-rows:1fr}.team-gallery .team-side div{min-height:230px}}
+@media(max-width:760px){.team-gallery{grid-template-columns:1fr;gap:14px}.team-gallery .team-main{min-height:440px}.team-gallery .team-side{grid-template-rows:minmax(300px,auto) minmax(155px,auto);gap:14px}.team-gallery .team-small-row{gap:14px;min-height:155px}}
 
 
 /* Nosotras: foto protagonista + logo secundario */
