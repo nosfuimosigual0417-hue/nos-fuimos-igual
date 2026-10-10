@@ -291,3 +291,15 @@
   .about-layout .secondary-column .team-caption{font-size:13px}
   .about-layout .team-secondary{min-height:280px}
 }
+
+
+/* Nosotras: tipografía más sutil para las frases finales */
+.dark .belief{
+  font-size:clamp(20px,2.15vw,27px);
+  line-height:1.35;
+  letter-spacing:-.015em;
+  padding:21px 8px 21px 0;
+}
+@media(max-width:760px){
+  .dark .belief{font-size:clamp(21px,5vw,25px);line-height:1.35;padding:18px 0}
+}
